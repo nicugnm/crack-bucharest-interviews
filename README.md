@@ -105,6 +105,7 @@ private void f2(Function<Object, Object> f) {
 83. vorbeste despre stream-uri (orice, finite/infinite, stream-uri normale si parallel streams). modalitatea de cum functioneaza un parallel stream -> forkjoin method
 84. vorbeste despre lock, cand se foloseste, un exemplu cand poti sa obtii deadlock si cum ai rezolva daca ai avea un deadlock in productie? -> thread dumps
 85. Ai doua interfete: InterfataA si InterfataB. Din Java8 se poate folosi default pentru a implementa comportamentul unei metode intr-o interfata. Daca ai InterfataC care implementeaza InterfataA si InterfataB, cu acelasi nume (cele doua adica) , ce o sa se intample? (compilatorul te obliga sa faci override. Pentru a alege care, folosesti super.InterfataA.metoda() )
+86. (Nu m-a intrebat nimeni -inca- dar e bine de stiut): Despre Pools: String Pools, Integer Pools samd. (cached)
 
 ##### Coding / Clean Code
 1. Construieste un cache de mana -> folosind HashMap. Ce se intampla daca folosim un Key de tip Object cu 2 field-uri, cu getters si setters si folosesc cheia respectiva si dupa aceea schimb un field. Se schimba hashcode-ul din hashmap? Cum se face key-ul imutabil?
