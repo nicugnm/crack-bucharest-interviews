@@ -260,7 +260,13 @@ Hint: flatmap, filter, map.
 9. explica ce date sunt luate la un left outer join
 10. in general, care este rolul unei tranzactii?
 11. cate tipuri de view-uri exista? ai auzit despre view-uri materializate?
-12. Ai auzit de database pages? Poti descrie ce fac/ce sunt? Ref: https://medium.com/@hnasr/following-a-database-read-to-the-metal-a187541333c2 
+12. Ai auzit de database pages? Poti descrie ce fac/ce sunt? Ref: https://medium.com/@hnasr/following-a-database-read-to-the-metal-a187541333c2
+13. Hibernate: Despre FETCH JOIN (n+1 problem) si despre persistance context. La ce se foloseste entity version in hibernate?
+    (ref: @Version is used to implement [Optimisting Locking](https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html) with Hibernate, which means that no two transactions override the data at the same time with a conflict.
+If the data is read by two threads at the same time, and both try to update the same row with different values, Hibernate uses the @Version field to check if the row is already updated.
+Before committing, each transaction verifies that no other transaction has modified its data. If modified, the last transaction encounters a "Working with stale data" error.
+
+@Audited is used to perform [auditing functionality](https://docs.jboss.org/envers/docs/index.html#migration) on entities part of Hibernate [Envers](https://docs.jboss.org/envers/docs/index.html))
 
 ### DevOps
 1. Spring Profiles -> Kubernetes ConfigMaps
