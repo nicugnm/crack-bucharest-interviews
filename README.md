@@ -317,4 +317,4 @@ Before committing, each transaction verifies that no other transaction has modif
 11. Define what is happening when you type google.com . (with networking , OSI model, until you get the answer).
 12. Tell me about TSL/SSL, certificates. What type of security attacks do you know ? (and questions about csrf, jwt token encoding, security servers, cors, xsf, xss).
 13. 'How Google Chrome / browsers handle caches? You do the request, right? And then you have http 1.1 which have a caching mechanism. tell me about it'
-14. Design a linkify system. (that included rest endpoints , 302 with location header, database sharding, caching, message queues, queries, nosql vs sql, bloom filter, monitoring & alerting , kubernetes (hpa/vpa, redirections, dns server, algorithm to create randomness, tracing)
+14. Design a short url system (bit.ly example). (that included rest endpoints , 302 with location header, database sharding, caching, message queues, queries, nosql vs sql, bloom filter, monitoring & alerting , kubernetes (hpa/vpa, redirections, dns server, algorithm to create randomness, tracing)
