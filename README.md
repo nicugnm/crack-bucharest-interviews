@@ -105,7 +105,9 @@ private void f2(Function<Object, Object> f) {
 83. vorbeste despre stream-uri (orice, finite/infinite, stream-uri normale si parallel streams). modalitatea de cum functioneaza un parallel stream -> forkjoin method
 84. vorbeste despre lock, cand se foloseste, un exemplu cand poti sa obtii deadlock si cum ai rezolva daca ai avea un deadlock in productie? -> thread dumps
 85. Ai doua interfete: InterfataA si InterfataB. Din Java8 se poate folosi default pentru a implementa comportamentul unei metode intr-o interfata. Daca ai InterfataC care implementeaza InterfataA si InterfataB, cu acelasi nume (cele doua adica) , ce o sa se intample? (compilatorul te obliga sa faci override. Pentru a alege care, folosesti super.InterfataA.metoda() )
-86. (Nu m-a intrebat nimeni -inca- dar e bine de stiut): Despre Pools: String Pools, Integer Pools samd. (cached)
+86. Despre Pools: String Pools, Integer Pools samd. (cached)
+87. Care este contractul dintre equals() si hashcode() methods + proprietati?
+88. De ce in Java 5 a fost implementat type erasure la compilare pentru Generics?
 
 ##### Coding / Clean Code
 1. Construieste un cache de mana -> folosind HashMap. Ce se intampla daca folosim un Key de tip Object cu 2 field-uri, cu getters si setters si folosesc cheia respectiva si dupa aceea schimb un field. Se schimba hashcode-ul din hashmap? Cum se face key-ul imutabil?
@@ -179,6 +181,9 @@ Hint: flatmap, filter, map.
 4. Problema de code review ce continea .close() fara try-with-resources. Negari prima data si conditii in cod (tratare cazuri), simplificare cerinta de code loading si exception code.
 5. Explica care este problema daca am pasa intr-o metoda 9 argumente si cum poti rezolva asta? De ce este o problema de clean code sa pasam intr-o metoda 3 parametrii booleni, de exemplu: 'true, true, false'. Cum poti rezolva asta? -> clean code/uncle bob, enums.
 6. Probleme cu sliding window / arrays / 2 pointers approach
+7. Implementeaza de la 0 un HashSet, LinkedHashSet, TreeSet + HashMap, LinkedHashMap, TreeMap.
+8. Explica/Implementeaza clasa object, explica care sunt metodele din clasa Object si implementeaza-le.
+   
 
 
 # Spring / API
@@ -247,6 +252,8 @@ Hint: flatmap, filter, map.
 2. https://leetcode.com/problems/two-sum/ -> two sum
 3. https://leetcode.com/problems/implement-queue-using-stacks/ -> 2 stacks for queue
 4. https://leetcode.com/problems/implement-stack-using-queues/ -> 2 queues for stack
+5. paranthesis problem
+6. subsequence of sums
 
 ### SQL & NoSQL
 1. Se dau doua tabele: studenti si profesori, iar un profesor preda mai multe materii. Descrie tipul de relatie si proiecteaza tabelele. Afla top 3 cei mai populari profesori dupa numarul de studenti inscrisi la cursuri.
@@ -290,6 +297,8 @@ Before committing, each transaction verifies that no other transaction has modif
 19. 'what is DOS and DDOS?'
 20. 'tell me about Log4j vulnerability, what happened?'
 21. 'what's the difference between a docker image and docker container?'
+22. ce face canary deployment? explica-mi cum faci config-ul atunci cand vrei sa redistribui traficul pentru un anumit pod/serviciu samd si cum ai facut in proiectele tale (daca-i cazul). care e preferinta?
+23. despre pipelines, helm charts, pipeline steps, tipuri de deployments, service mesh (traffic management). cum faci rollback la un deployment?
 
 ### Microservices , Distributed Apps?
 1. 'what are the properties of a microservice?' -> Reliable, Scalable, and Maintainable. -> dupa business logic si baza de date independenta
@@ -297,6 +306,8 @@ Before committing, each transaction verifies that no other transaction has modif
 3. 'tell me about quality attributes'
 4. 'what are the benefits of using microservice architecture?'
 5. 'microservice vs serverless'
+6. explica-mi cum functioneaza BFF Architecture si cand se aplica si de unde stim ca request-ul respectiv vine de la un device anume
+7. care e diferenta dintre http si https si cum securizez atat clientul , dar si serverul folosind https + metode. ce inseamna cand o pagina web din client e "secured" si zi-mi despre acel certificat din browser -> chrome
 
 ### Agile & SCRUM
 1. 'do you work SCRUM? how does is work for your team?'
