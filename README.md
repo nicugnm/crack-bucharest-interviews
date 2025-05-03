@@ -254,6 +254,10 @@ Hint: flatmap, filter, map.
 4. https://leetcode.com/problems/implement-stack-using-queues/ -> 2 queues for stack
 5. paranthesis problem
 6. subsequence of sums
+7. care este diferenta dintre un mutex si un semafor?
+8. care este diferenta dintre un proces si un thread?
+9. care sunt proprietatile unui binary search tree?
+10. explica cum functioneaza object references?
 
 ### SQL & NoSQL
 1. Se dau doua tabele: studenti si profesori, iar un profesor preda mai multe materii. Descrie tipul de relatie si proiecteaza tabelele. Afla top 3 cei mai populari profesori dupa numarul de studenti inscrisi la cursuri.
